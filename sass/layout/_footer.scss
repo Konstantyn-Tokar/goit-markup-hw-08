@@ -1,0 +1,115 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+
+  .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .logo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+.footer-address {
+  &__link {
+    margin-bottom: 9px;
+    line-height: 1.71;
+    color: var(--color-text-light-fon);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link-contacts {
+    font-family: var(--main-font);
+    line-height: 1.71;
+    color: var(--color-footer-contacts);
+    transition: color 250ms var(--timing);
+  }
+
+  &__link-contacts:hover,
+  &__link-contacts:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-networks {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 206px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--color-text-light-fon);
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms var(--timing);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-form {
+  &__input {
+    margin-right: 12px;
+    margin-top: 20px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius);
+    background-color: #2f303a;
+    padding: 15px 16px;
+    color: var(--color-text-light-fon);
+  }
+
+  &__button {
+    @extend %button;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 10px 29px;
+    border-radius: var(--radius);
+    transition: box-shadow 250ms var(--timing);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: var(--color-pointed-btn);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &__icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+}

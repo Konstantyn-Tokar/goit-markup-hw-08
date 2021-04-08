@@ -1,0 +1,15 @@
+.chosen {
+    position: relative;
+    color: var(--accent-color);
+
+    &::after {
+        position: absolute;
+        display: block;
+        margin-top: 29px;
+        content:'';
+        width: 100%;
+        background: var(--accent-color);
+        border-radius: 2px;
+        height: 4px;
+    }
+}
