@@ -8,6 +8,12 @@
     color: var(--accent-color);
 
 }
+
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-right: 88px;
+    }
+}
 // _____________ДЛЯ DESKTOP _________________
 // .logo {
 //     padding-top: 24px;
