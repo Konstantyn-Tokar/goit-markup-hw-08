@@ -6,17 +6,16 @@
 }
 
 @media screen and (max-width: 767px) {
-.navigation__list {
-  display: none;
-}
+  .navigation__list {
+    display: none;
+  }
 
-.contacts {
-  display: none;
-}
+  .contacts {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
-
   .menu-btn,
   .mobile-menu {
     display: none;
@@ -27,35 +26,80 @@
     align-items: center;
 
     &__list {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
     }
 
     &__item:not(:last-child) {
-        margin-right: 50px;
+      margin-right: 50px;
     }
 
     &__link {
-        padding-top: 32px;
-        padding-bottom: 32px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--color-text);
-        transition: color 250ms var(--timing);
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--color-text);
+      transition: color 250ms var(--timing);
     }
 
     &__link:hover,
-    &__link:focus{
-        color: var(--accent-color);
+    &__link:focus {
+      color: var(--accent-color);
     }
+  }
+  .contacts {
+    &__item:first-child {
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--color-accent);
+      transition: color 250ms var(--timing);
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: var(--accent-color);
+    }
+
+    &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    &__link {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &__item {
+      margin-right: 50px;;    
+    }
+    &__item:first-child {
+      margin-bottom: 0px;
+    }
+
+    &__item:last-child {
+      margin-right: 0;
+    }
+  }
 }
-
-
-
 
 // _____________ДЛЯ DESKTOP _________________
 // .header {
@@ -63,7 +107,6 @@
 //     border-bottom-width: 1px;
 //     border-bottom-style: solid;
 //     border-bottom-color: #C4C4C4;
-
 
 //     }
 // }
