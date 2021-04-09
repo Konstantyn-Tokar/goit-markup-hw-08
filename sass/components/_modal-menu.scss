@@ -1,0 +1,77 @@
+.menu-btn,
+.mobile-menu__close-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu-btn__icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--color-text);
+}
+
+.mobile-menu__close-icon {
+  width: 40px;
+  height: 40px;
+
+  &:focus {
+      fill: var(--accent-color);
+  }
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  max-width: 480px;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: white;
+  transform: translateY(-100%) translateX(-50%);
+  transition: transform 250ms var(--timing);
+
+  &.is-open {
+    transform: translateY(0) translateX(-50%) ;
+  }
+}
+
+// ___________СТИЛИ ЧТО БЫ ОКНО ВЫЕЗЖАЛО_____________ 
+// .mobile-menu {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+
+//   &.is-open {
+//     opacity: 1;
+//     visibility: visible;
+//     pointer-events: auto;
+//   }
+// }
+// ___________________________________________________ 
+
+.mobile-nav {
+    margin-bottom: 302px ;
+}
+
+.mobile-nav__link {
+font-weight: 500;
+font-size: 40px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+color: var(--color-text);
+}
+
+.mobile-nav__list :not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.menu-chosen {
+    color: var(--accent-color);
+}
