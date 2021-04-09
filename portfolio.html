@@ -19,38 +19,119 @@
 <body>
 
     <header class="header">
-        <div class="container">
-            <nav class="navigation">
-                <a class="logo link " href="./index.html" lang="en">Web<span class="logo-light-theme">Studio</span></a>
-                <ul class="list navigation__list">
-                    <li class="navigation__item">
-                        <a class="navigation__link link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link link chosen" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link link" href="">Контакты</a>
-                    </li>
-                </ul> 
-            </nav>
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a class="contacts__link link" href="mailto:info@devstudio.com">
-                        <svg class="contacts__icon" width="16" height="12">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg> info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a class="contacts__link link" href="tel:+380961111111">
-                        <svg class="contacts__icon" width="10" height="16">
-                            <use href="./images/sprite.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo link" href="./index.html" lang="en"
+            >Web<span class="logo-light-theme">Studio</span>
+          </a>
+          <ul class="list navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link link " href="./index.html">
+                Студия
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link chosen" href="./portfolio.html">
+                Портфолио
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <button class="menu-btn" type="button" data-menu-button >
+          <svg class="menu-btn__icon">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+
+        <button class="mobile-menu__close-btn" type="button" data-menu-close>
+          <svg class="mobile-menu__close-icon">
+            <use class="mobile-menu__icon" href="./images/sprite.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item">
+              <a  class="mobile-nav__link link menu-chosen" href="./index.html">
+                Студия
+              </a>
+            </li>
+            <li class="mobile-nav__item">
+              <a  class="mobile-nav__link link" href="./portfolio.html">
+                Портфолио
+              </a>
+            </li>
+            <li class="mobile-menU__item">
+              <a  class="mobile-nav__link link" href="">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__list list">
+            <a class="mobile-contacts__link-tel link" 
+               href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-contacts__list list">
+            <a
+              class="mobile-contacts__link-mailto link"
+              href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="mobile-sotial">
+          <li class="mobile-sotial__list list">
+            <a href="" class="mobile-sotial__link link">
+              Instagram
+            </a>
+          </li>
+          <li class="mobile-sotial__list list">
+            <a href="" class="mobile-sotial__link link">
+              Twitter
+            </a>
+          </li>
+          <li class="mobile-sotial__list list">
+            <a href="" class="mobile-sotial__link link">
+              Facebook
+            </a>
+          </li>
+          <li class="mobile-sotial__list list">
+            <a href="" class="mobile-sotial__link link">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     
     <main>
@@ -236,9 +317,8 @@
 
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
-            <!-- перепроверить  -->
             <div class="footer-address">
                 <a class="logo link " href="./index.html" lang="en">Web<span class="logo-dark-theme">Studio</span></a>
                 <address class="address">
@@ -302,7 +382,7 @@
                 </button>
             </form>
         </div>
-    </footer>
+    </footer> -->
 
 
 </body>
