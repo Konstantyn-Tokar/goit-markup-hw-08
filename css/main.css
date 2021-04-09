@@ -68,10 +68,14 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-right: 15px;
   padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section {
@@ -93,13 +97,12 @@ img {
 }
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 94px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   color: var(--accent-color);
 }
 
@@ -349,92 +352,27 @@ img {
   box-sizing: content-box;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #C4C4C4;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
+  border-bottom-color: #c4c4c4;
 }
 
 .navigation__list {
-  display: flex;
-  align-items: center;
-}
-
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.navigation__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--color-text);
-  transition: color 250ms var(--timing);
-}
-
-.navigation__link:hover, .navigation__link:focus {
-  color: var(--accent-color);
+  display: none;
 }
 
 .contacts {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
-.contacts__item {
-  margin-right: 50px;
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
-.contacts__item:last-child {
-  margin-right: 0;
-}
-
-.contacts__link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--color-accent);
-  transition: color 250ms var(--timing);
-}
-
-.contacts__link:hover, .contacts__link:focus {
-  color: var(--accent-color);
-}
-
-.contacts__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.chosen {
-  position: relative;
-  color: var(--accent-color);
-}
-
-.chosen::after {
-  position: absolute;
-  display: block;
-  margin-top: 29px;
-  content: '';
-  width: 100%;
-  background: var(--accent-color);
-  border-radius: 2px;
-  height: 4px;
+.menu-btn__icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--color-text);
 }
 
 .hero {

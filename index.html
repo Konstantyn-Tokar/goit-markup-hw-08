@@ -24,24 +24,29 @@
       <div class="container">
         <nav class="navigation">
           <a class="logo link" href="./index.html" lang="en"
-            >Web<span class="logo-light-theme">Studio</span></a
-          >
+            >Web<span class="logo-light-theme">Studio</span>
+          </a>
           <ul class="list navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link link chosen" href="./index.html"
-                >Студия</a
-              >
+              <a class="navigation__link link chosen" href="./index.html">
+                Студия
+              </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link link" href="./portfolio.html"
-                >Портфолио</a
-              >
+              <a class="navigation__link link" href="./portfolio.html">
+                Портфолио
+              </a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
+        <button class="menu-btn" type="button">
+          <svg class="menu-btn__icon">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="contacts list">
           <li class="contacts__item">
             <a class="contacts__link link" href="mailto:info@devstudio.com">
@@ -60,10 +65,12 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu"></div>
     </header>
 
     <main>
       <!-- HERO -->
+
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -74,6 +81,7 @@
       </section>
 
       <!-- Features -->
+
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
@@ -131,6 +139,7 @@
       </section>
 
       <!-- Our work -->
+
       <section class="section work">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -138,7 +147,10 @@
             <li class="work__item">
               <img
                 class="work__img"
-                srcset="./images/our_work/our_work_img_1.jpg 1x , ./images/our_work/our_work_img_1@2x.jpg 2x"
+                srcset="
+                  ./images/our_work/our_work_img_1.jpg    1x,
+                  ./images/our_work/our_work_img_1@2x.jpg 2x
+                "
                 src="./images/our_work/our_work_img_1.jpg"
                 alt=" программист верстает веб-страницу"
                 width="370"
@@ -151,7 +163,10 @@
             <li class="work__item">
               <img
                 class="work__img"
-                srcset="./images/our_work/our_work_img_2.jpg 1x , ./images/our_work/our_work_img_1@2x.jpg 2x"
+                srcset="
+                  ./images/our_work/our_work_img_2.jpg    1x,
+                  ./images/our_work/our_work_img_1@2x.jpg 2x
+                "
                 src="./images/our_work/our_work_img_2.jpg"
                 alt="програмист адаптирует сайт для мобильных устройств"
                 width="370"
@@ -164,7 +179,10 @@
             <li class="work__item">
               <img
                 class="wwork__img"
-                srcset="./images/our_work/our_work_img_3.jpg 1x , ./images/our_work/our_work_img_3@2x.jpg 2x"
+                srcset="
+                  ./images/our_work/our_work_img_3.jpg    1x,
+                  ./images/our_work/our_work_img_3@2x.jpg 2x
+                "
                 src="./images/our_work/our_work_img_3.jpg"
                 alt="дизайнер делает макет веб-страницу"
                 width="370"
@@ -179,6 +197,7 @@
       </section>
 
       <!-- Team -->
+
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
@@ -360,6 +379,7 @@
       </section>
 
       <!-- Clients -->
+
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
@@ -497,6 +517,7 @@
     </footer>
 
     <!-- Modal -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form action="#" class="form-modal">
