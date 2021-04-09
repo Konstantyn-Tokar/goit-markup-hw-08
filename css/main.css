@@ -135,6 +135,27 @@ img {
   transition: opacity 250ms var(--timing), visibility 250ms var(--timing), pointer-events 250ms var(--timing);
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  max-width: 480px;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: white;
+  transform: translateY(-101%) translateX(-50%);
+  transition: transform 250ms var(--timing);
+}
+
+.mobile-menu.is-open {
+  transform: translateY(0) translateX(-50%);
+}
+
+.menu-chosen {
+  color: var(--accent-color);
+}
+
 .menu-btn,
 .mobile-menu__close-btn {
   background-color: transparent;
@@ -160,23 +181,6 @@ img {
   fill: var(--accent-color);
 }
 
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 100vw;
-  max-width: 480px;
-  height: 100vh;
-  padding: 48px 40px;
-  background-color: white;
-  transform: translateY(-101%) translateX(-50%);
-  transition: transform 250ms var(--timing);
-}
-
-.mobile-menu.is-open {
-  transform: translateY(0) translateX(-50%);
-}
-
 .mobile-nav {
   margin-bottom: 302px;
 }
@@ -191,10 +195,6 @@ img {
 
 .mobile-nav__list :not(:last-child) {
   margin-bottom: 32px;
-}
-
-.menu-chosen {
-  color: var(--accent-color);
 }
 
 .mobile-contacts__list {
