@@ -37,6 +37,10 @@
   .modal {
     width: 100vw;
   }
+
+  .form-modal__check-desk {
+      flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {

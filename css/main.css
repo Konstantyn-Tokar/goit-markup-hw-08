@@ -294,6 +294,9 @@ img {
   .modal {
     width: 100vw;
   }
+  .form-modal__check-desk {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -444,6 +447,13 @@ img {
   border: none;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+@media screen and (max-width: 450px) {
+  .form-modal__check-desk {
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
