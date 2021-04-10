@@ -7,7 +7,7 @@
     height: 100vh;
     padding: 48px 40px;
     background-color: white;
-    transform: translateY(-101%) translateX(-50%);
+    transform: translateY(-200%) translateX(-50%);
     transition: transform 250ms var(--timing);
     
     &.is-open {
