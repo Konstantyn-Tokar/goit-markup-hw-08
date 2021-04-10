@@ -158,7 +158,6 @@ img {
   top: 0;
   left: 50%;
   width: 100vw;
-  max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
   background-color: white;
@@ -291,6 +290,12 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 100vw;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -316,7 +321,8 @@ img {
 
 .form-modal__link {
   font-family: var(--main-font);
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   text-decoration-line: underline;
   color: var(--accent-color);
 }
@@ -412,7 +418,8 @@ img {
   justify-content: center;
   margin-bottom: 30px;
   font-family: var(--main-font);
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: #757575;
 }
 
@@ -443,6 +450,10 @@ img {
   .form-modal__text-active {
     font-size: 20px;
     line-height: 1.15;
+  }
+  .form-modal__check-desk, .form-modal__link {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 

@@ -15,7 +15,8 @@
 
   &__link {
     font-family: var(--main-font);
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     text-decoration-line: underline;
     color: var(--accent-color);
   }
@@ -113,7 +114,8 @@
     justify-content: center;
     margin-bottom: 30px;
     font-family: var(--main-font);
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: #757575;
   }
 
@@ -141,9 +143,16 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .form-modal__text-active {
-    font-size: 20px;
-    line-height: 1.15;
+  .form-modal {
+    &__text-active {
+      font-size: 20px;
+      line-height: 1.15;
+    }
+    &__check-desk,
+    &__link {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
 
