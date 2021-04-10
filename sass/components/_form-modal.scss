@@ -143,15 +143,6 @@
   }
 }
 
-@media screen and (max-width: 450px) {
-  .form-modal {
-    &__check-desk {
-      flex-wrap: wrap;
-      margin-bottom: 17px;
-    }
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .form-modal {
     &__text-active {

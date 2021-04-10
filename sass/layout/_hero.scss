@@ -14,7 +14,6 @@
   background-size: cover;
 
   &__title {
-    width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
     font-weight: 900;
@@ -54,12 +53,16 @@
 // ______________________TABLET_______________________
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 7680px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero/tablet/bg_tablet.jpg);
+
+    &__title {
+      width: 360px;
+    }
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -106,7 +109,6 @@
     }
   }
 }
-
 
 // _______________ТО ЧТО БЫЛО _________________
 // .hero {
