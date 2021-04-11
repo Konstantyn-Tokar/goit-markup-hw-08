@@ -112,14 +112,15 @@
 }
   .mobile-sotial {
     &__link {
-      font-size: 12px;
+      font-size: 4vw;
     }
   }
   .mobile-contacts {
     &__link-tel {
-
-      font-size: 28px;
-
+      font-size: 7vw;
     }
+      &__link-mailto {
+    font-size: 5vw;
+  }
   }
 }

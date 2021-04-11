@@ -276,10 +276,13 @@ img {
     padding: 35px 30px;
   }
   .mobile-sotial__link {
-    font-size: 12px;
+    font-size: 4vw;
   }
   .mobile-contacts__link-tel {
-    font-size: 28px;
+    font-size: 7vw;
+  }
+  .mobile-contacts__link-mailto {
+    font-size: 5vw;
   }
 }
 
