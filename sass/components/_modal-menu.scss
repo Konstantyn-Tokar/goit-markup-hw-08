@@ -1,11 +1,11 @@
 .mobile-menu {
   overflow-y: scroll;
-  Z-index: 1;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  max-width: 480px;
+  // max-width: 480px;
   top: 0;
   left: 50%;
   width: 100vw;
@@ -46,7 +46,6 @@
 }
 
 .mobile-nav {
-
   &__link {
     font-weight: 500;
     font-size: 40px;
@@ -103,5 +102,24 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-menu {
+  padding: 35px 30px;
+
+}
+  .mobile-sotial {
+    &__link {
+      font-size: 12px;
+    }
+  }
+  .mobile-contacts {
+    &__link-tel {
+
+      font-size: 28px;
+
+    }
   }
 }
