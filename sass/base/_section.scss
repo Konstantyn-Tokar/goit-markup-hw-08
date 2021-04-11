@@ -1,9 +1,15 @@
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-// .section {
-//     padding-top: var(--section--pt);
-//     padding-bottom: var(--section--pb);
-// }
+@media screen and (min-width: 1200px) {
+  .section {
+    .footer & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    padding-top: var(--section--pt);
+    padding-bottom: var(--section--pb);
+  }
+}

@@ -102,6 +102,17 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: var(--section--pt);
+    padding-bottom: var(--section--pb);
+  }
+  .footer .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .form-modal__button, .modal-button, .footer-form__button {
   min-width: 200px;
   font-weight: 700;
