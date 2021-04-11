@@ -16,8 +16,6 @@
 }
 
 .footer-address {
-  margin-bottom: 60px;
-
   &__link {
     margin-bottom: 9px;
     line-height: 1.71;
@@ -42,7 +40,6 @@
 }
 
 .footer-networks {
-  margin-bottom: 60px;
   &__list {
     display: flex;
     justify-content: center;
@@ -117,6 +114,15 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-address {
+    margin-bottom: 60px;
+  }
+
+  .footer-networks {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer {
     .container {
