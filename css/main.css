@@ -112,6 +112,7 @@ img {
   cursor: pointer;
   border-radius: var(--radius);
   color: var(--color-text-light-fon);
+  border-style: hidden;
   transition: background-color 250ms var(--timing);
 }
 
@@ -477,6 +478,7 @@ img {
 }
 
 .text-action {
+  margin-bottom: 20px;
   display: block;
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -712,7 +714,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
@@ -762,9 +763,6 @@ img {
   .features__item {
     flex-basis: calc((100% - 90px) / 4);
     margin-left: 30px;
-  }
-  .features__icon-fon {
-    width: 270px;
   }
   .features__subtitle {
     text-align: left;
@@ -949,9 +947,7 @@ img {
 }
 
 .footer .container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .footer .logo {
@@ -959,6 +955,10 @@ img {
   padding-bottom: 0px;
   margin-bottom: 20px;
   margin-right: 0;
+}
+
+.footer-address {
+  margin-bottom: 60px;
 }
 
 .footer-address__link {
@@ -982,11 +982,18 @@ img {
   color: var(--accent-color);
 }
 
+.footer-networks {
+  margin-bottom: 60px;
+}
+
 .footer-networks__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
-  width: 206px;
+}
+
+.footer-networks__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-networks__link {
@@ -1016,9 +1023,8 @@ img {
 }
 
 .footer-form__input {
-  margin-right: 12px;
-  margin-top: 20px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--radius);
@@ -1028,9 +1034,10 @@ img {
 }
 
 .footer-form__button {
-  display: inline-flex;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
   align-items: center;
-  border: 1px solid transparent;
   padding: 10px 29px;
   border-radius: var(--radius);
   transition: box-shadow 250ms var(--timing);
@@ -1046,6 +1053,35 @@ img {
   width: 20px;
   height: 20px;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    justify-content: space-between;
+    text-align: left;
+  }
+  .footer-form {
+    width: 570px;
+  }
+  .footer-form__input {
+    margin-bottom: 0px;
+    margin-right: 10px;
+    width: 354px;
+  }
+  .footer-form__button {
+    display: inline-flex;
+  }
 }
 
 .filter__list {

@@ -8,6 +8,7 @@
     cursor: pointer;
     border-radius: var(--radius);
     color: var(--color-text-light-fon);
+    border-style: hidden;
     transition: background-color 250ms var(--timing) ;
 }
 
