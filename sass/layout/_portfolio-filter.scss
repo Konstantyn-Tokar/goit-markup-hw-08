@@ -2,7 +2,9 @@
   &__list {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
   }
+
   &__item:not(:last-child) {
     margin-right: 8px;
   }
@@ -44,11 +46,11 @@
     &__list {
       flex-wrap: wrap;
       justify-content: flex-start;
-      margin-bottom: -10px;
+      margin-top: -10px;
     }
 
     &__item {
-      margin-bottom: 10px;
+      margin-top: 10px;
     }
   }
 }

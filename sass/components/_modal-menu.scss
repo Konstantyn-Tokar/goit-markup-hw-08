@@ -1,23 +1,25 @@
 .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    padding: 48px 40px;
-    background-color: white;
-    transform: translateY(-200%) translateX(-50%);
-    transition: transform 250ms var(--timing);
-    
-    &.is-open {
-        transform: translateY(0) translateX(-50%);
-    }
+  Z-index: 1;
+  position: fixed;
+  max-width: 480px;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: white;
+  transform: translateY(-200%) translateX(-50%);
+  transition: transform 250ms var(--timing);
+
+  &.is-open {
+    transform: translateY(0) translateX(-50%);
+  }
 }
 
 .menu-btn,
 .mobile-menu__close-btn {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
   padding: 0;
 }
 
@@ -40,67 +42,66 @@
 }
 
 .mobile-nav {
-    margin-bottom: 302px;
-    
-    &__link {
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        color: var(--color-text);
-    }
-    
-    &__list :not(:last-child) {
-        margin-bottom: 32px;
-    }
+  margin-bottom: 302px;
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+  }
+
+  &__list :not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .menu-chosen {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-
 .mobile-contacts {
-    &__list {
-        margin-bottom: 32px;
-    }
-    
-    &__link-tel {
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        color: var(--accent-color);
-    }
-    
-    &__link-mailto {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1.16;
-        letter-spacing: 0.02em;
-        color: var(--color-accent);
-    }
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__link-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+
+  &__link-mailto {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--color-accent);
+  }
 }
 
 .mobile-sotial {
-    display: flex;
-    margin-top: 32px;
-    margin-bottom: 48px;
-    
-    &__list:not(:last-child)::after  {
-        content: '';
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        transform: rotate(90deg);
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    &__link {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        letter-spacing: 0.02em;
-        color: var(--accent-color);
-    }
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 48px;
+
+  &__list:not(:last-child)::after {
+    content: '';
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
 }
 
 // ___________СТИЛИ ЧТО БЫ ОКНО ВЫЕЗЖАЛО_____________
