@@ -292,7 +292,7 @@ img {
 
 .modal {
   max-width: 450px;
-  max-height: 610px;
+  min-height: 610px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -322,6 +322,13 @@ img {
 .modal__close-button:hover .modal__icon-close,
 .modal__close-button:focus .modal__icon-close {
   fill: var(--accent-color);
+}
+
+@media screen and (max-height: 620px) {
+  .modal {
+    min-height: min-content;
+    max-height: 610px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -476,6 +483,9 @@ img {
 }
 
 @media screen and (max-height: 620px) {
+  .form-modal {
+    overflow-y: scroll;
+  }
   .form-modal__footer-comments {
     height: 80px;
   }
