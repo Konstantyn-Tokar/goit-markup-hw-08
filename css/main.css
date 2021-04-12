@@ -475,6 +475,20 @@ img {
   background-position: 50% 50%;
 }
 
+@media screen and (max-width: 449px) {
+  .form-modal__check-desk {
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 3vw;
+    margin-bottom: 6vw;
+  }
+  .form-modal__link {
+    font-size: 3vw;
+    line-height: 7vw;
+    margin-top: 0.5vw;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .form-modal__text-active {
     font-size: 20px;
