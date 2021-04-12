@@ -143,6 +143,15 @@
   }
 }
 
+@media screen and (max-height: 620px) {
+  .form-modal {
+      &__footer-comments {
+    height: 80px;
+  }
+  }
+
+  
+}
 @media screen and (max-width: 449px) {
   .form-modal {
     &__check-desk {

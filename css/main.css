@@ -292,7 +292,7 @@ img {
 
 .modal {
   max-width: 450px;
-  min-height: 610px;
+  max-height: 610px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -473,6 +473,12 @@ img {
   border: none;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+@media screen and (max-height: 620px) {
+  .form-modal__footer-comments {
+    height: 80px;
+  }
 }
 
 @media screen and (max-width: 449px) {
