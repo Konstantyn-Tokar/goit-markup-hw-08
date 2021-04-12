@@ -729,7 +729,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 7680px;
+    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/tablet/bg_tablet.jpg);
   }
   .hero__title {
