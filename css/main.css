@@ -175,7 +175,6 @@ img {
   top: 0;
   left: 50%;
   width: 100vw;
-  max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
   background-color: white;
@@ -908,8 +907,7 @@ img {
 }
 
 .team__description {
-  padding-top: 30px;
-  padding-bottom: 24px;
+  padding: 30px 32px;
 }
 
 .team__img {
