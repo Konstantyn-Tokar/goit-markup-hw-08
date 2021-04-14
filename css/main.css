@@ -595,13 +595,12 @@ img {
   border-bottom-color: #c4c4c4;
 }
 
-@media screen and (max-width: 767px) {
-  .navigation__list {
-    display: none;
-  }
-  .contacts {
-    display: none;
-  }
+.navigation__list {
+  display: none;
+}
+
+.contacts {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -632,6 +631,9 @@ img {
   }
   .navigation__link:hover, .navigation__link:focus {
     color: var(--accent-color);
+  }
+  .contacts {
+    display: block;
   }
   .contacts__item:first-child {
     margin-bottom: 10px;

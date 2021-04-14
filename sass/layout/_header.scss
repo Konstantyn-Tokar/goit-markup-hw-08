@@ -5,7 +5,7 @@
   border-bottom-color: #c4c4c4;
 }
 
-@media screen and (max-width: 767px) {
+
   .navigation__list {
     display: none;
   }
@@ -13,7 +13,7 @@
   .contacts {
     display: none;
   }
-}
+
 
 @media screen and (min-width: 768px) {
   .menu-btn,
@@ -51,6 +51,7 @@
     }
   }
   .contacts {
+    display: block;
     &__item:first-child {
       margin-bottom: 10px;
     }
