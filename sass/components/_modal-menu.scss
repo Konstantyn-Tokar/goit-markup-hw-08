@@ -15,7 +15,7 @@
   transition: transform 250ms var(--timing);
   border-radius: var(--radius);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   &.is-open {
     transform: translateY(0) translateX(-50%);
@@ -97,7 +97,6 @@
 
 .mobile-sotial {
   display: flex;
-
   &__list:not(:last-child)::after {
     content: '';
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -119,9 +118,8 @@
 
 @media screen and (max-width: 479px) {
   .mobile-menu {
-  padding: 48px 30px;
-
-}
+    padding: 48px 30px;
+  }
   .mobile-sotial {
     &__link {
       font-size: 4vw;
@@ -131,8 +129,8 @@
     &__link-tel {
       font-size: 7vw;
     }
-      &__link-mailto {
-    font-size: 5vw;
-  }
+    &__link-mailto {
+      font-size: 5vw;
+    }
   }
 }
